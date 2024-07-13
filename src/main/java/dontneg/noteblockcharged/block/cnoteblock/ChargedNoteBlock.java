@@ -21,7 +21,6 @@ public class ChargedNoteBlock extends NoteBlock {
     public ChargedNoteBlock(Settings settings) {
         super(settings);
         this.setDefaultState(getDefaultState().with(ChargedNoteBlock.CHARGED, false));
-
     }
 
     @Override
