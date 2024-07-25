@@ -21,11 +21,11 @@ public class NoteBlocks {
     @SuppressWarnings("SameParameterValue")
     private static Block registerBlock(String key, Block block){
         registerBlockItem(key, block);
-        return Registry.register(Registries.BLOCK, new Identifier(NoteBlockCharged.MOD_ID, key), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(NoteBlockCharged.MOD_ID, key), block);
     }
 
     private static void registerBlockItem(String key, Block block){
-        Registry.register(Registries.ITEM, new Identifier(NoteBlockCharged.MOD_ID, key),
+        Registry.register(Registries.ITEM, Identifier.of(NoteBlockCharged.MOD_ID, key),
                 new BlockItem(block, new Item.Settings()));
     }
 

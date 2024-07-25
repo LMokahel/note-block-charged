@@ -14,7 +14,7 @@ public class NoteBlockCreativeClass {
 
     @SuppressWarnings("unused")
     public static final ItemGroup NOTEBLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(NoteBlockCharged.MOD_ID, "note_block"),
+            Identifier.of(NoteBlockCharged.MOD_ID, "note_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.noteblock"))
                     .icon(() -> new ItemStack(NoteBlocks.CHARGED_NOTE_BLOCK)).entries((displayContext, entries) ->
                             entries.add(NoteBlocks.CHARGED_NOTE_BLOCK)).build());
